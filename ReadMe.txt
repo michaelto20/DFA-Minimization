@@ -25,3 +25,12 @@ Follow these steps:
 TROUBLESHOOTING:
 If you encounter problems with any of this make sure you have the most recent Java JRE and JDK installed and make sure
 the JDK bin directory is in your System Variables path.
+
+File Input Format:
+This program will take in a file containing a description of a DFA and will output the minimized form.  The input file must follow the following example:
+(states, (0,1,2,3,4,5))
+(alpha, (1,2))
+(trans-func, ((0,1,3),(0,2,4),(1,2,3),(2,1,5),(3,1,2),(4,2,1),(5,1,4)))
+(start, 0)
+(final, (1))
+
